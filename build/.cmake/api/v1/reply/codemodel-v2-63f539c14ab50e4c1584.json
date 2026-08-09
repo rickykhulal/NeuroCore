@@ -1,0 +1,516 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-Debug-47fc338e9d496d343f8d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "NeuroCoreX",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-22a7eff7a7e120ebecc5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreX-Debug-5913c018c6c224c0dcd5.json",
+					"name" : "NeuroCoreX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreXWeb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreXWeb-Debug-dc30fcf372b17c8405c9.json",
+					"name" : "NeuroCoreXWeb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-f094149a4f1b08ff88d9.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_inference_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_inference_engine-Debug-1ad924bb6dc7dc89ea1c.json",
+					"name" : "test_inference_engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_knowledge_graph::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_knowledge_graph-Debug-2f9822317b72dd07d077.json",
+					"name" : "test_knowledge_graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_layers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_layers-Debug-eb6cd1ad545f3afc6c92.json",
+					"name" : "test_layers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_parser-Debug-89544e9c248e0e6be2d8.json",
+					"name" : "test_parser",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-Release-47fc338e9d496d343f8d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "NeuroCoreX",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-22a7eff7a7e120ebecc5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreX-Release-c2830d20821f60210d4c.json",
+					"name" : "NeuroCoreX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreXWeb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreXWeb-Release-1c49ce0c2127a73128f7.json",
+					"name" : "NeuroCoreXWeb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-f094149a4f1b08ff88d9.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_inference_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_inference_engine-Release-f18e5f5bdfb63978f6a6.json",
+					"name" : "test_inference_engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_knowledge_graph::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_knowledge_graph-Release-bf8d21feaaf2add38b69.json",
+					"name" : "test_knowledge_graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_layers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_layers-Release-50a3d0b005b40fadccc0.json",
+					"name" : "test_layers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_parser-Release-d3510a365118b98d0fe6.json",
+					"name" : "test_parser",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-MinSizeRel-47fc338e9d496d343f8d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "NeuroCoreX",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-22a7eff7a7e120ebecc5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreX-MinSizeRel-989d4599488d9a677ae0.json",
+					"name" : "NeuroCoreX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreXWeb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreXWeb-MinSizeRel-835cb636f5064ed2bb74.json",
+					"name" : "NeuroCoreXWeb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-f094149a4f1b08ff88d9.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_inference_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_inference_engine-MinSizeRel-fe0f2f48a4eba0ed7b64.json",
+					"name" : "test_inference_engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_knowledge_graph::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_knowledge_graph-MinSizeRel-1bf985607c41f08666a6.json",
+					"name" : "test_knowledge_graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_layers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_layers-MinSizeRel-5b7b4efbd496c5b7ba2c.json",
+					"name" : "test_layers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_parser-MinSizeRel-1ed8ba6d93770a7f1ed4.json",
+					"name" : "test_parser",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-RelWithDebInfo-47fc338e9d496d343f8d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "NeuroCoreX",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-22a7eff7a7e120ebecc5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreX-RelWithDebInfo-06533ed06693300cbace.json",
+					"name" : "NeuroCoreX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NeuroCoreXWeb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NeuroCoreXWeb-RelWithDebInfo-90a853eae0fb49dd6c5c.json",
+					"name" : "NeuroCoreXWeb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-f094149a4f1b08ff88d9.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_inference_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_inference_engine-RelWithDebInfo-328ab8418b9ccbd4dd46.json",
+					"name" : "test_inference_engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_knowledge_graph::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_knowledge_graph-RelWithDebInfo-a0728d7475dd5ee0cae6.json",
+					"name" : "test_knowledge_graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_layers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_layers-RelWithDebInfo-2dc943f4d6b1997eaf26.json",
+					"name" : "test_layers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_parser-RelWithDebInfo-470f4a99707bec97d40b.json",
+					"name" : "test_parser",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build",
+		"source" : "C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

@@ -1,0 +1,9 @@
+build/
+out/
+*.exe
+*.pdb
+*.ilk
+.vs/
+.vscode/
+data/memory_save.txt
+data/snapshots/

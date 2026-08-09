@@ -1,0 +1,9 @@
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/NeuroCoreX.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/NeuroCoreXWeb.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/test_knowledge_graph.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/test_parser.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/test_inference_engine.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/test_layers.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/RUN_TESTS.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/ALL_BUILD.dir
+C:/OOP/NeuroCoreX_ReadyForRender/NeuroCoreX/build/CMakeFiles/ZERO_CHECK.dir

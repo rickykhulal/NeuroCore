@@ -1,0 +1,11 @@
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\core\EventBus.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\EventBus.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\memory\KnowledgeGraph.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\KnowledgeGraph.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\reasoning\Parser.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\Parser.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\reasoning\InferenceEngine.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\InferenceEngine.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\learning\DenseLayer.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\DenseLayer.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\learning\ActivationLayer.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\ActivationLayer.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\learning\Network.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\Network.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\learning\FeatureEncoder.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\FeatureEncoder.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\explain\ExplanationTrace.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\ExplanationTrace.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\app\Application.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\Application.obj
+C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\src\web\main_web.cpp;C:\OOP\NeuroCoreX_ReadyForRender\NeuroCoreX\build\NeuroCoreXWeb.dir\Debug\main_web.obj
