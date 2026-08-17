@@ -205,11 +205,12 @@ function addMessage(text, who) {
   conversation.scrollTop = conversation.scrollHeight;
 }
 
-async function sendCommand() {
-  const cmd = input.value.trim();
+async function sendCommand(command = input.value) {
+  const cmd = command.trim();
   if (!cmd) return;
+
   addMessage(cmd, 'user');
-  input.value = '';
+  if (command === input.value) input.value = '';
 
   try {
     const res = await fetch('/api/command', {
@@ -222,6 +223,19 @@ async function sendCommand() {
   } catch (err) {
     addMessage('Error contacting NeuroCore X backend: ' + err, 'system');
   }
+}
+
+// Submit pasted lines one at a time so the backend receives separate commands.
+async function sendCommands(commands) {
+  const lines = commands
+    .flatMap(command => command.split(/\r?\n/))
+    .map(command => command.trim())
+    .filter(Boolean);
+
+  for (const command of lines) {
+    await sendCommand(command);
+  }
+
   refreshStats();
 }
 
@@ -229,6 +243,18 @@ function sendQuick(cmd) {
   input.value = cmd;
   sendCommand();
 }
+
+input.addEventListener('paste', (e) => {
+  const pastedText = e.clipboardData.getData('text');
+  const lines = pastedText.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+
+  // A single-line paste keeps the original behavior.
+  if (lines.length <= 1) return;
+
+  e.preventDefault();
+  input.value = '';
+  sendCommands(lines);
+});
 
 input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') sendCommand();
