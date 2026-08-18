@@ -90,6 +90,16 @@ int main(int argc, char** argv) {
         res.set_content(j.str(), "application/json");
     });
 
+    // Reset endpoint: clears active memory, training data, and persisted snapshots.
+    server.Post("/api/reset", [&app](const httplib::Request&, httplib::Response& res) {
+        bool success = app.reset();
+        res.status = success ? 200 : 500;
+        res.set_content(success
+            ? "{\"ok\":true,\"message\":\"All memory, training data, and snapshots have been reset.\"}"
+            : "{\"ok\":false,\"message\":\"Reset failed while deleting persisted data.\"}",
+            "application/json");
+    });
+
     // Lightweight stats endpoint for the sidebar (concept/relationship/
     // conflict/training counts), polled periodically by the page.
     server.Get("/api/stats", [&app](const httplib::Request&, httplib::Response& res) {
