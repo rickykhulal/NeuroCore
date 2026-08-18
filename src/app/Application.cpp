@@ -82,6 +82,31 @@ Application::Application() {
     // change to KnowledgeGraph itself.
 }
 
+bool Application::reset() {
+    std::error_code ec;
+
+    // Remove persisted memory and named snapshots as part of a full reset.
+    fs::remove("data/memory_save.txt", ec);
+    if (ec) return false;
+
+    ec.clear();
+    fs::remove_all(SNAPSHOT_DIR, ec);
+    if (ec) return false;
+
+    // Recreate the active graph and network so all in-memory facts,
+    // training examples, learned weights, and trained state are cleared.
+    graph = std::make_shared<memory::KnowledgeGraph>(eventBus);
+    network = std::make_shared<learning::Network>();
+    network->addLayer(std::make_unique<learning::DenseLayer>(2, 8));
+    network->addLayer(std::make_unique<learning::ActivationLayer>("relu"));
+    network->addLayer(std::make_unique<learning::DenseLayer>(8, 1));
+    network->addLayer(std::make_unique<learning::ActivationLayer>("linear"));
+    engine = std::make_unique<reasoning::InferenceEngine>(graph, network);
+    lastTrace.clear();
+
+    return true;
+}
+
 std::string Application::handle(const std::string& line) {
     return dispatch(line);
 }
@@ -92,7 +117,11 @@ std::string Application::dispatch(const std::string& line) {
     std::string cmd;
     ss >> cmd;
 
-    if (cmd == "help") {
+    if (cmd == "reset") {
+        out << (reset() ? "All memory, training data, and snapshots have been reset.\n"
+                         : "Reset failed while deleting persisted data.\n");
+
+    } else if (cmd == "help") {
         out << "Available Commands:\n";
         out << "  teach <sub/num> <rel/op> <obj/num>  - Add a fact or training example\n";
         out << "  teach <expr> = <result>             - Add an equation-style fact (e.g. teach 1 + 1 = 2)\n";
@@ -107,6 +136,7 @@ std::string Application::dispatch(const std::string& line) {
         out << "  snapshot list                      - List all saved snapshots\n";
         out << "  snapshot delete <name>             - Delete a named snapshot\n";
         out << "  snapshot diff <name1> <name2>      - Compare two saved snapshots\n";
+        out << "  reset                              - Clear all memory and saved data\n";
 
     } else if (cmd == "teach") {
         std::string rest;
