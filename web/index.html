@@ -83,6 +83,8 @@
     font-family: 'Consolas', monospace;
   }
   .quickcmds button:hover { background: var(--accent-soft); border-color: var(--accent); }
+  .quickcmds button.reset-button { color: var(--red); border-color: var(--red); }
+  .quickcmds button.reset-button:hover { background: rgba(248, 113, 113, 0.12); }
 
   .main { flex: 1; display: flex; flex-direction: column; }
   .conversation {
@@ -168,6 +170,7 @@
       <button onclick="sendQuick('evaluate')">evaluate</button>
       <button onclick="sendQuick('why')">why</button>
       <button onclick="sendQuick('snapshot list')">snapshot list</button>
+      <button class="reset-button" onclick="resetAllData()">reset all data</button>
     </div>
   </div>
 
@@ -242,6 +245,28 @@ async function sendCommands(commands) {
 function sendQuick(cmd) {
   input.value = cmd;
   sendCommand();
+}
+
+async function resetAllData() {
+  const confirmed = window.confirm(
+    'Reset all NeuroCore data? This will clear memory, training data, and saved snapshots.'
+  );
+  if (!confirmed) return;
+
+  try {
+    const res = await fetch('/api/reset', { method: 'POST' });
+    const data = await res.json();
+    if (!res.ok || !data.ok) {
+      throw new Error(data.message || 'Reset failed');
+    }
+
+    conversation.innerHTML = '';
+    addMessage('All memory, training data, and snapshots have been reset.', 'system');
+    input.value = '';
+    refreshStats();
+  } catch (err) {
+    addMessage('Reset failed: ' + err.message, 'system');
+  }
 }
 
 input.addEventListener('paste', (e) => {
