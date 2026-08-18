@@ -31,6 +31,9 @@ public:
     // simple.
     std::string statsJson() const;
 
+    // Clears active memory, learned examples, and persisted snapshots.
+    bool reset();
+
 private:
     std::shared_ptr<core::EventBus> eventBus;
     std::shared_ptr<memory::KnowledgeGraph> graph;
